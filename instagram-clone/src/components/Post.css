@@ -1,0 +1,82 @@
+/* Post.css */
+.post {
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin: 20px auto; 
+  padding: 20px;
+  width: 100%;
+  max-width: 500px; 
+  box-sizing: border-box; 
+}
+
+.post img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block; 
+  margin-top: 10px;
+}
+
+.post h4 {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.post p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.post button {
+  background-color: #0095f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.post button:hover {
+  background-color: #0077b3;
+}
+
+.post input, .post button {
+  padding: 8px;
+  margin-top: 10px;
+}
+
+.post input[type="text"], .post input[type="email"], .post input[type="password"] {
+  flex-grow: 1;
+  margin-right: 10px;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+}
+
+.post form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .post {
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .post img {
+    margin-top: 5px;
+  }
+  
+  .post h4, .post p {
+    margin: 5px 0;
+  }
+}
